@@ -1,0 +1,54 @@
+{
+  "name": "7stars-rating",
+  "version": "1.0.0",
+  "description": "stars-rating",
+  "main": "./src/index.js",
+  "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "start": "webpack-dev-server .",
+    "build": "Webpack ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/runtime": "^7.17.9",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1",
+    "gh-pages": "^3.2.3"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "homepage": "https://amo2019.github.io/7stars-rating/",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

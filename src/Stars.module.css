@@ -4,6 +4,12 @@
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  background: rgb(27, 31, 105);
+  background: radial-gradient(
+    circle,
+    rgba(27, 31, 105, 1) 0%,
+    rgba(48, 76, 125, 1) 100%
+  );
 }
 .star {
   color: goldenrod;
@@ -30,7 +36,9 @@
 }
 
 .stars::after {
-  content: '( ' counter(rateit) ' / 7 )';
+  content: '(' counter(rateit) '/7)';
+  color: #ebc567;
+  font-weight: initial;
 }
 
 .rated::before {
@@ -48,4 +56,12 @@
 .rated:hover {
   transition: 0.3s ease-out 0.2s;
   color: rgba(254, 201, 0, 0.88);
+}
+
+@media only screen and (max-width: 600px) {
+  .stars,
+  .star,
+  .rated {
+    font-size: 1.4rem;
+  }
 }
